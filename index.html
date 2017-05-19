@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>index</title>
+    <link rel="stylesheet" href="bower_components/pure/pure.css">
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="bower_components/pure/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="bower_components/pure/grids-responsive-min.css">
+    <!--<![endif]-->
+	<style>
+		.zt-menu {
+			background: #2d3e50;
+			width: 100%;
+			position: fixed;
+			top: 0;
+			left: 0;
+		}
+		.zt-brand {
+			color: #fff;
+			font-size: 120%;
+			line-height: 57px;
+			text-decoration: none;
+		}
+		.zt-list {
+			float: right;
+			list-style: none;
+			display: inline-block;
+		}
+		.zt-item {
+			display: inline-block;
+		}
+		.zt-link {
+			color: #fff;
+			text-decoration: none;
+			font-size: 120%;
+		}
+		.zt-link:focus {
+			background-color: #fff;
+		}
+        .zt-banner {
+            display: table;
+            width: 100%;
+            /*上述样式居中必备*/
+            background-color: #eee;
+        }
+        .zt-banner-img {
+            display: table-cell;
+            margin: 0 auto;
+            /*上述样式居中必备*/
+        }
+        img {
+            max-width: 100%;
+            /*上述样式控制最大的宽度。即是将实际宽度定在0-max-width之间。当元素内部宽度不足max-width时，外层元素的宽度随着内层元素的宽度而改变。
+            以此处大屏幕一行放置的三张图片说起，即使放置三张图片（它们加在一起的宽度远远超过浏览器屏幕的宽度），但图片仍会显示全部宽度（也就是显示完整的图片，并不会显示不完整），图片宽高按比例缩小*/
+            min-height: 160px;
+            /*上述样式控制最小高度，当适配到最小分辨率的屏幕，如320的，此时达到最小的高度，高度便不再变小，但宽度还是会变小*/
+        }
+        .zt-main {
+            text-align: center;
+            max-width: 980px;
+            margin: 0 auto;
+        }
+        .pure-g h1 {
+            margin: 0 auto;
+        }
+        .custom-menu {
+            display: none;
+        }
+        .custom-menu {
+            display: inline-block;
+            width: auto;
+            vertical-align: middle;
+            -webkit-font-smoothing: antialiased;
+            position: relative;
+            padding-top: .5em;
+            padding-bottom: .5em;
+        }
+        .custom-menu .pure-menu-heading {
+            color: white;
+        }
+        .custom-menu .pure-menu-heading:hover {
+            background-color: transparent;
+        }
+        .custom-menu-brand {
+            display: none;
+            text-align: center;
+            position: relative;
+        }
+        .custom-menu-toggle {
+            width: 44px;
+            height: 44px;
+            position: absolute;
+            top: 3px;
+            right: 0;
+            display: none;
+        }
+        .custom-menu-toggle .bar {
+            background-color: white;
+            display: block;
+            width: 20px;
+            height: 2px;
+            border-radius: 100px;
+            position: absolute;
+            top: 22px;
+            right: 12px;
+        }
+        @media (max-width: 62em) {
+            .custom-menu {
+                display: block;
+            }
+            .custom-menu-toggle {
+                display: block;
+                /*在ie6、ie7.ie8、ie9都隐藏*/
+                display: none\9;
+            }
+        }
+        footer {
+            background: #f3f3f5;
+            height: 100px;
+        }
+	</style>
+</head>
+<body>
+    <!--头部菜单开始-->
+	<header class="zt-menu">
+	    <a href="#" class="zt-brand">BRAND</a>
+	    <ul class="zt-list">
+	        <li class="zt-item"><a href="#" class="zt-link">News</a></li>
+	        <li class="zt-item"><a href="#" class="zt-link">Sports</a></li>
+	        <li class="zt-item"><a href="#" class="zt-link">Finance</a></li>
+	    </ul>
+        <div class="pure-menu custom-menu">
+            <a href="#" class="pure-menu-heading custom-menu-brand">Brand</a>
+            <a href="#" class="custom-menu-toggle" id="toggle"><s class="bar"></s><s class="bar"></s></a>
+        </div>
+	</header>
+    <!--头部菜单结束-->
+    <!--导航大图开始-->
+	<nav class="zt-banner">
+		<a href=""><img class="zt-banner-img" src="img/banner.png" alt=""></a>
+	</nav>
+    <!--导航大图结束-->
+    <!--主要内容开始-->
+    <div class="container">
+        <div class="zt-main">
+            <div class="pure-g"><h1 class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">课程概览</h1></div>
+            <div class="pure-g">
+                <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3"><a href=""><img src="img/01.png" alt=""/></a></div>
+                <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3"><a href=""><img src="img/01.png" alt=""/></a></div>
+                <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3"><a href=""><img src="img/01.png" alt=""/></a></div>
+                <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3"><a href=""><img src="img/01.png" alt=""/></a></div>
+                <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3"><a href=""><img src="img/01.png" alt=""/></a></div>
+                <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3"><a href=""><img src="img/01.png" alt=""/></a></div>
+            </div>
+        </div>
+    </div>
+    <!--主要内容结束-->
+	<footer>
+
+    </footer>
+</body>
+</html>
